@@ -153,7 +153,7 @@ export default function Page() {
       </header>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col gap-6 p-6 sm:p-8 lg:flex-row overflow-hidden max-w-7xl mx-auto w-full">
+      <div className="flex flex-1 flex-col gap-6 p-6 sm:p-8 lg:flex-row overflow-hidden w-full">
         {/* Input Section */}
         <div className="flex flex-1 flex-col group">
           <div className="flex items-center justify-between mb-2">

@@ -10,9 +10,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: process.env.NEXT_PUBLIC_APP_TITLE || 'ENV ⇄ JSON Transformer',
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION || 'Instantly convert your environment configuration variables back and forth',
+  generator: process.env.NEXT_PUBLIC_APP_GENERATOR || 'v0.app',
   icons: {
     icon: [
       {
@@ -22,6 +22,10 @@ export const metadata: Metadata = {
       {
         url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/favicon.svg',
+        type: 'image/svg+xml',
       },
       {
         url: '/icon.svg',
